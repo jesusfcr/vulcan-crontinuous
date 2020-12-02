@@ -1,0 +1,13 @@
+# Vulcan Crontinuous configuration file
+http-port = $PORT
+region = "$AWS_REGION"
+aws-s3-endpoint = "$AWS_S3_ENDPOINT"
+path-style = $PATH_STYLE
+bucket = "$CRONTINUOUS_BUCKET"
+vulcan-api = "$VULCAN_API"
+vulcan-user = "$VULCAN_USER"
+vulcan-token = "$VULCAN_TOKEN"
+enable-teams-whitelist-scan = $ENABLE_TEAMS_WHITELIST_SCAN
+teams-whitelist-scan = $TEAMS_WHITELIST_SCAN
+enable-teams-whitelist-report = $ENABLE_TEAMS_WHITELIST_REPORT
+teams-whitelist-report = $TEAMS_WHITELIST_REPORT

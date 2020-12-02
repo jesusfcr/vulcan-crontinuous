@@ -1,0 +1,17 @@
+dist: bionic
+language: go
+services:
+  - docker
+go:
+  - 1.13.3
+env:
+  global:
+    - CGO_ENABLED=0
+    - GO111MODULE=on
+gobuild_args: -a -tags netgo -ldflags '-w'
+go_import_path: github.com/adevinta/vulcan-crontinuous
+script:
+  - go install $(go list ./... | grep -v /vendor/)
+  - go test -v $(go list ./... | grep -v /vendor/)
+after_success:
+  - bash -c 'source <(curl -s https://raw.githubusercontent.com/adevinta/vulcan-cicd/master/docker.sh)'

@@ -1,0 +1,15 @@
+# Vulcan Crontinuous configuration file
+http-port = 8082
+region = "local-region"
+aws-s3-endpoint = "http://localhost:9000"
+path-style = true
+bucket = "crontinuous"
+vulcan-api = "http://localhost:8080/api"
+vulcan-user = "vulcan-scheduler@vulcan.com"
+vulcan-token = "a token"
+
+enable-teams-whitelist-scan = false
+teams-whitelist-scan = []
+
+enable-teams-whitelist-report = false
+teams-whitelist-report = []
