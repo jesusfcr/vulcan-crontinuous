@@ -10,8 +10,7 @@ env:
     - GO111MODULE=on
 gobuild_args: -a -tags netgo -ldflags '-w'
 go_import_path: github.com/adevinta/vulcan-crontinuous
-script:
-  - go install $(go list ./... | grep -v /vendor/)
-  - go test -v $(go list ./... | grep -v /vendor/)
+install: _script/bootstrap
+script: _script/cibuild
 after_success:
   - bash -c 'source <(curl -s https://raw.githubusercontent.com/adevinta/vulcan-cicd/master/docker.sh)'

@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Copyright 2020 Adevinta
+
+go test -v $(go list ./... | grep -v /vendor/)
