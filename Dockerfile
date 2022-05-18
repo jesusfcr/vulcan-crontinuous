@@ -1,6 +1,6 @@
 # Copyright 2020 Adevinta
 
-FROM golang:1.13-alpine3.10 AS builder
+FROM golang:1.18.2-alpine3.15 AS builder
 
 WORKDIR /app
 
@@ -16,7 +16,7 @@ COPY . .
 
 RUN go build -o vulcan-crontinuous -a -tags netgo -ldflags '-w' cmd/vulcan-crontinuous/main.go
 
-FROM alpine:3.10
+FROM alpine:3.15
 
 RUN apk add --no-cache --update gettext
 
