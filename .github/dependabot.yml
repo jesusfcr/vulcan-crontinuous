@@ -8,3 +8,7 @@ updates:
   allow:
   - dependency-name: "*adevinta*"
   - dependency-name: "github.com/manelmontilla/cron"
+- package-ecosystem: "docker"
+  directory: "/"
+  schedule:
+    interval: "weekly"
