@@ -14,4 +14,4 @@ script:
   - go install $(go list ./... | grep -v /vendor/)
   - go test -v $(go list ./... | grep -v /vendor/)
 after_success:
-  - bash -c 'source <(curl -s https://raw.githubusercontent.com/adevinta/vulcan-cicd/master/docker.sh)'
+  - bash -c 'source <(curl -s https://raw.githubusercontent.com/adevinta/vulcan-cicd/remove-v-from-tag/docker.sh)'
