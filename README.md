@@ -20,7 +20,7 @@ It exposes two group of endpoints to handle schedules for scans and reports.
     ```GET ``` to ``` /entries ```
 
     The endpoint will return a response like this.
-```
+```json
  [
     {
         "program_id": "44a57d24-2a23-41a0-a986-2f11a68e9e8b",
