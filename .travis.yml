@@ -10,4 +10,4 @@ env:
 gobuild_args: -a -tags netgo -ldflags '-w'
 go_import_path: github.com/adevinta/vulcan-crontinuous
 after_success:
-  - bash -c 'source <(curl -s https://raw.githubusercontent.com/adevinta/vulcan-cicd/remove-v-from-tag/docker.sh)'
+  - bash -c 'source <(curl -s https://raw.githubusercontent.com/adevinta/vulcan-cicd/tag-major-minor/docker.sh)'
