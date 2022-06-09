@@ -3,7 +3,8 @@
 A cron based scheduler to execute Vulcan scans and digest report generation.
 
 To run execute:
-```
+
+```sh
 go build cmd/vulcan-crontinuous
 ./cmd/vulcan-crontinuous/vulcan-crontinuous -c _resources/config/local.toml
 ```
