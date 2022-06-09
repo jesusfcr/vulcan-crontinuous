@@ -41,7 +41,8 @@ It exposes two group of endpoints to handle schedules for scans and reports.
     ```GET ``` to ``` /entries/:programID ```
 
     The endpoint will return a response like this.
-```
+
+```json
 {
     "program_id": "44a57d24-2a23-41a0-a986-2f11a68e9e8b",
     "team_id":"461a62aa-6e1c-11e8-802e-4c32758b498f",
@@ -53,7 +54,7 @@ It exposes two group of endpoints to handle schedules for scans and reports.
 
     ```POST``` to ``` /settings/:programID/:teamID ``` with a json payload in the body like this:
 
-```
+```json
  {
      "str" : "* * * * * *"
  }
