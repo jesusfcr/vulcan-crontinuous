@@ -68,7 +68,7 @@ It exposes two group of endpoints to handle schedules for scans and reports.
 
   ```POST``` to ``` /entries/``` with a json payload in the body like this:
 
-```
+```json
  [
      {
       "str" : "* * * * * *",
