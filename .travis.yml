@@ -3,4 +3,4 @@ language: shell
 services:
   - docker
 after_success:
-  - bash -c 'source <(curl -s https://raw.githubusercontent.com/adevinta/vulcan-cicd/tag-major-minor/docker.sh)'
+  - bash -c 'source <(curl -s https://raw.githubusercontent.com/adevinta/vulcan-cicd/tags/docker.sh)'
